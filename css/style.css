@@ -1,4 +1,721 @@
 /* MEMBER 2: global styles, layout, colours, dark mode */
-.header{
-    ryuf;
+/* =====================================================
+   GENERAL SETTINGS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #242438;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    width: 100%;
+    height: 55px;
+
+    background-color: #51268c;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 82%;
+    max-width: 1120px;
+
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.nav-link {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 8px;
+
+    padding: 20px 0;
+
+    transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.75;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid white;
+}
+
+
+/* THEME BUTTON */
+
+.theme-btn {
+    width: 22px;
+    height: 22px;
+
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 4px;
+
+    background: transparent;
+    color: white;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.2s ease;
+}
+
+.theme-btn:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    width: 82%;
+    max-width: 1120px;
+
+    height: 174px;
+
+    margin: 0 auto;
+
+    background: linear-gradient(
+        110deg,
+        #f3edfc,
+        #faf8ff
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    margin-top: -2px;
+}
+
+
+/* HERO TITLE */
+
+.hero h1 {
+    font-size: 23px;
+
+    font-weight: 700;
+
+    color: #27273a;
+
+    margin-bottom: 7px;
+}
+
+.hero h1 span {
+    color: #51268c;
+}
+
+
+/* HERO DESCRIPTION */
+
+.hero p {
+    font-size: 7px;
+
+    color: #85858e;
+
+    margin-bottom: 17px;
+}
+
+
+/* HERO BUTTON */
+
+.hero-button {
+    display: inline-block;
+
+    background-color: #51268c;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 7px;
+
+    padding: 7px 14px;
+
+    border-radius: 3px;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.hero-button:hover {
+    background-color: #3f1d6e;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   COMMON SECTION SETTINGS
+===================================================== */
+
+section h2 {
+    text-align: center;
+
+    color: #51268c;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 19px;
+}
+
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+
+.about-section {
+    width: 82%;
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    padding: 31px 0 27px;
+}
+
+.about-container {
+    width: 67%;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 9px;
+}
+
+
+/* ABOUT CARD */
+
+.about-card {
+    min-height: 73px;
+
+    border: 1px solid #e5e5e9;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+    padding: 17px 10px;
+
+    text-align: center;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.07);
+}
+
+.about-card h3 {
+    font-size: 8px;
+
+    color: #51268c;
+
+    margin-bottom: 7px;
+}
+
+.about-card p {
+    font-size: 6.5px;
+
+    line-height: 1.5;
+
+    color: #85858e;
+}
+
+
+/* =====================================================
+   TEAM SECTION
+===================================================== */
+
+.team-section {
+    width: 82%;
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    padding: 32px 0 28px;
+
+    background-color: #f3effb;
+}
+
+.team-container {
+    width: 67%;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 9px;
+}
+
+
+/* TEAM CARD */
+
+.team-card {
+    min-height: 77px;
+
+    background-color: white;
+
+    border: 1px solid #e5e5e9;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.07);
+}
+
+
+/* MEMBER CIRCLE */
+
+.member-circle {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background-color: #51268c;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+.team-card h3 {
+    font-size: 7px;
+
+    color: #51268c;
+
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 6px;
+
+    color: #85858e;
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-section {
+    width: 82%;
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    padding: 30px 0 28px;
+}
+
+.contact-section h2 {
+    margin-bottom: 19px;
+}
+
+
+/* CONTACT FORM */
+
+form {
+    width: 35%;
+
+    min-width: 300px;
+
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 11px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 6px;
+
+    font-weight: bold;
+
+    color: #383844;
+
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #dedee3;
+
+    border-radius: 4px;
+
+    outline: none;
+
+    background-color: white;
+
+    color: #333;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    padding: 6px 7px;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.form-group input {
+    height: 20px;
+}
+
+.form-group textarea {
+    height: 49px;
+
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #51268c;
+
+    box-shadow:
+        0 0 0 2px rgba(81,38,140,0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaaaaf;
+}
+
+
+/* FORM MESSAGE */
+
+#formMessage {
+    min-height: 13px;
+
+    font-size: 6px;
+
+    margin-bottom: 2px;
+}
+
+.success-message {
+    color: #27934c;
+}
+
+.error-message {
+    color: #d33b3b;
+}
+
+
+/* SEND BUTTON */
+
+.send-button {
+    background-color: #51268c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 3px;
+
+    font-size: 7px;
+
+    padding: 7px 12px;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.send-button:hover {
+    background-color: #3f1d6e;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    width: 82%;
+    max-width: 1120px;
+
+    min-height: 55px;
+
+    margin: 0 auto;
+
+    background-color: #202235;
+
+    color: #c4c4cb;
+
+    text-align: center;
+
+    padding: 12px 0;
+
+    font-size: 6px;
+
+    line-height: 1.8;
+}
+
+.footer a {
+    color: #a78bd2;
+
+    text-decoration: none;
+
+    font-size: 6px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode {
+    background-color: #171722;
+
+    color: #eeeeee;
+}
+
+body.dark-mode .about-card,
+body.dark-mode .team-card {
+    background-color: #242432;
+
+    border-color: #393948;
+}
+
+body.dark-mode .about-card p,
+body.dark-mode .team-card p {
+    color: #aaaab5;
+}
+
+body.dark-mode .form-group label {
+    color: #eeeeee;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #242432;
+
+    border-color: #444454;
+
+    color: white;
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(
+        110deg,
+        #242035,
+        #29233b
+    );
+}
+
+body.dark-mode .hero h1 {
+    color: #eeeeee;
+}
+
+body.dark-mode .team-section {
+    background-color: #211e2e;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        width: 92%;
+    }
+
+    .hero,
+    .about-section,
+    .team-section,
+    .contact-section,
+    .footer {
+        width: 92%;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .about-container {
+        width: 90%;
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .team-container {
+        width: 90%;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    form {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 12px 0;
+    }
+
+    .nav-container {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .nav-link {
+        padding: 5px 0;
+    }
+
+    .hero {
+        width: 100%;
+
+        height: 210px;
+    }
+
+    .about-section,
+    .contact-section {
+        width: 100%;
+    }
+
+    .team-section {
+        width: 100%;
+    }
+
+    .about-container,
+    .team-container {
+        width: 88%;
+    }
+
+    .team-container {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    form {
+        width: 80%;
+
+        min-width: 0;
+    }
+
+    .footer {
+        width: 100%;
+    }
 }
