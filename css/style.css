@@ -16,11 +16,6 @@ body {
         color 0.3s ease;
 }
 
-
-/* =====================================================
-   NAVBAR
-===================================================== */
-
 .navbar {
     width: 100%;
     height: 55px;
@@ -44,9 +39,6 @@ body {
     justify-content: space-between;
 }
 
-
-/* LOGO */
-
 .logo {
     color: white;
 
@@ -55,9 +47,6 @@ body {
 
     letter-spacing: 0.2px;
 }
-
-
-/* NAVIGATION */
 
 nav {
     display: flex;
@@ -85,9 +74,6 @@ nav {
     border-bottom: 1px solid white;
 }
 
-
-/* THEME BUTTON */
-
 .theme-btn {
     width: 22px;
     height: 22px;
@@ -113,11 +99,6 @@ nav {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-
-/* =====================================================
-   HERO
-===================================================== */
-
 .hero {
     width: 82%;
     max-width: 1120px;
@@ -141,9 +122,6 @@ nav {
     margin-top: -2px;
 }
 
-
-/* HERO TITLE */
-
 .hero h1 {
     font-size: 23px;
 
@@ -158,9 +136,6 @@ nav {
     color: #51268c;
 }
 
-
-/* HERO DESCRIPTION */
-
 .hero p {
     font-size: 7px;
 
@@ -168,9 +143,6 @@ nav {
 
     margin-bottom: 17px;
 }
-
-
-/* HERO BUTTON */
 
 .hero-button {
     display: inline-block;
@@ -197,11 +169,6 @@ nav {
     transform: translateY(-1px);
 }
 
-
-/* =====================================================
-   COMMON SECTION SETTINGS
-===================================================== */
-
 section h2 {
     text-align: center;
 
@@ -213,11 +180,6 @@ section h2 {
 
     margin-bottom: 19px;
 }
-
-
-/* =====================================================
-   ABOUT SECTION
-===================================================== */
 
 .about-section {
     width: 82%;
@@ -239,9 +201,6 @@ section h2 {
 
     gap: 9px;
 }
-
-
-/* ABOUT CARD */
 
 .about-card {
     min-height: 73px;
@@ -283,11 +242,6 @@ section h2 {
     color: #85858e;
 }
 
-
-/* =====================================================
-   TEAM SECTION
-===================================================== */
-
 .team-section {
     width: 82%;
     max-width: 1120px;
@@ -311,9 +265,6 @@ section h2 {
 
     gap: 9px;
 }
-
-
-/* TEAM CARD */
 
 .team-card {
     min-height: 77px;
@@ -343,9 +294,6 @@ section h2 {
         0 4px 12px rgba(0, 0, 0, 0.07);
 }
 
-
-/* MEMBER CIRCLE */
-
 .member-circle {
     width: 28px;
     height: 28px;
@@ -367,7 +315,6 @@ section h2 {
     margin-bottom: 7px;
 }
 
-
 .team-card h3 {
     font-size: 7px;
 
@@ -382,11 +329,6 @@ section h2 {
     color: #85858e;
 }
 
-
-/* =====================================================
-   CONTACT SECTION
-===================================================== */
-
 .contact-section {
     width: 82%;
     max-width: 1120px;
@@ -399,9 +341,6 @@ section h2 {
 .contact-section h2 {
     margin-bottom: 19px;
 }
-
-
-/* CONTACT FORM */
 
 form {
     width: 35%;
@@ -474,9 +413,6 @@ form {
     color: #aaaaaf;
 }
 
-
-/* FORM MESSAGE */
-
 #formMessage {
     min-height: 13px;
 
@@ -492,9 +428,6 @@ form {
 .error-message {
     color: #d33b3b;
 }
-
-
-/* SEND BUTTON */
 
 .send-button {
     background-color: #51268c;
@@ -517,11 +450,6 @@ form {
 .send-button:hover {
     background-color: #3f1d6e;
 }
-
-
-/* =====================================================
-   FOOTER
-===================================================== */
 
 .footer {
     width: 82%;
@@ -555,11 +483,6 @@ form {
 .footer a:hover {
     text-decoration: underline;
 }
-
-
-/* =====================================================
-   DARK MODE
-===================================================== */
 
 body.dark-mode {
     background-color: #171722;
@@ -605,11 +528,6 @@ body.dark-mode .hero h1 {
 body.dark-mode .team-section {
     background-color: #211e2e;
 }
-
-
-/* =====================================================
-   RESPONSIVE DESIGN
-===================================================== */
 
 @media (max-width: 768px) {
 
