@@ -3,19 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Team Portfolio | Full-Stack Lab 03</title>
+  <title>TeamCode | Full-Stack Lab 03</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header-footer.css">
 </head>
 <body>
 
-  <!-- MEMBER 4: HEADER goes here -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home">TeamCode</a>
+      <div class="nav-links">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#team">Team</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="theme-button" id="themeButton" type="button" aria-label="Toggle dark mode">☾</button>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <!-- MEMBER 1: PAGE CONTENT (sections) goes here -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>We build things, <span>with</span></h1>
+        <p>A four-member team learning Full-Stack Software Development with Git &amp;<br class="desktop-break"> GitHub collaboration.</p>
+        <a class="primary-button" href="#team">Meet the Team</a>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <h2>About the Project</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>HTML</h3>
+          <p>Semantic structure for the whole page.</p>
+        </article>
+        <article class="project-card">
+          <h3>CSS</h3>
+          <p>Responsive layout, colours and dark mode.</p>
+        </article>
+        <article class="project-card">
+          <h3>JavaScript</h3>
+          <p>Interactivity: menu, theme, form checks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="team-section" id="team">
+      <div class="section-shell">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+          <article class="member-card">
+            <div class="member-avatar">M1</div>
+            <h3>Member 1</h3>
+            <p>PS/2022/123</p>
+            <p>HTML Developer</p>
+          </article>
+          <article class="member-card">
+            <div class="member-avatar">M2</div>
+            <h3>Member 2</h3>
+            <p>PS/2022/238</p>
+            <p>CSS Developer</p>
+          </article>
+          <article class="member-card">
+            <div class="member-avatar">M3</div>
+            <h3>Member 3</h3>
+            <p>PS/2022/230</p>
+            <p>JavaScript Developer</p>
+          </article>
+          <article class="member-card">
+            <div class="member-avatar">M4</div>
+            <h3>Member 4</h3>
+            <p>PS/2022/232</p>
+            <p>Header &amp; Footer Developer</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        <button class="primary-button form-button" type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
-  <!-- MEMBER 4: FOOTER goes here -->
+  <footer class="site-footer">
+    <p>&copy; 2025 TeamCode. All rights reserved.</p>
+    <p>CCS 123 | BSC 223 | <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a> of Kenya</p>
+    <a href="#home">Back to top</a>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
